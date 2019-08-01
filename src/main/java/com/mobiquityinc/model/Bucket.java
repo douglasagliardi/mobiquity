@@ -1,6 +1,5 @@
 package com.mobiquityinc.model;
 
-import com.mobiquityinc.exception.PackageOverWeightException;
 import lombok.Getter;
 
 import java.util.ArrayList;
@@ -13,27 +12,27 @@ public class Bucket {
 
     public Bucket(float maxWeight) {
         this.maxWeightAllowed = maxWeight;
-        things = new ArrayList<Item>();
+        things = new ArrayList<>();
     }
 
     public void addItemTo(Item element) {
-        if(hasSpaceFor(element)) {
-            things.add(element);
-        }
-        else {
-            throw new PackageOverWeightException("The item has more weight than this package can support.");
-        }
+        //if(hasSpaceFor(element)) {
+        things.add(element);
+        // }
+        //else {
+        //    throw new PackageOverWeightException("The item has more weight than this package can support.");
+        //}
     }
 
-    private boolean hasSpaceFor(Item item) {
-        return item.getWeight() + currentPackageWeight() <= 100;
-    }
+    //private boolean hasSpaceFor(Item item) {
+    //        return item.getWeight() + currentPackageWeight() <= 100;
+    //    }
 
-    private float currentPackageWeight() {
-        float result = 0F;
-        for (Item it : things) {
-            result += it.getWeight();
-        }
-        return result;
-    }
+//    private float currentPackageWeight() {
+//        float result = 0F;
+//        for (Item it : things) {
+//            result += it.getWeight();
+//        }
+//        return result;
+//    }
 }
