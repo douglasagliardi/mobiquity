@@ -10,5 +10,5 @@ import lombok.NoArgsConstructor;
 public class Item {
     private int index;
     private float weight;
-    private float price;
+    private int price;
 }

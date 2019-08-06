@@ -14,9 +14,9 @@ public class PackageInputProcessor extends InputProcessor {
 
     @Override
     public boolean check(PackageInputRequest request) {
-        if(request.getMaxWeight() <= PACKAGE_MAX_WEIGHT_ALLOWED) {
+        /*if(request.getMaxWeight() <= PACKAGE_MAX_WEIGHT_ALLOWED) {
             return checkNext(request);
-        }
+        }*/
         return false;
     }
 }
