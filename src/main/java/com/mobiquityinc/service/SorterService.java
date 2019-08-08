@@ -18,7 +18,7 @@ public class SorterService {
                         && hasLessWeightThanAllItemsInTheBucket(item, data.getStats().getCurrentWeight())) {
                     replaceEntireList(data.getBundle().getThings(), item);
                 }
-                data.setStats(getStats(data.getBundle()));
+                data.setStats(getPackageStats(data.getBundle()));
             }
         }
         return data.getBundle();
@@ -28,7 +28,7 @@ public class SorterService {
         return (item.getWeight() + currentWeight) <= maxWeight;
     }
 
-    private BundleStats getStats(Package bundle) {
+    private BundleStats getPackageStats(Package bundle) {
         return new BundleStats(getTotalPackageWeightFor(bundle), getTotalCostFor(bundle));
     }
 

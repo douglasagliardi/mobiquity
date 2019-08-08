@@ -108,7 +108,33 @@ public class SorterServiceTest {
         Package result = service.process(request);
 
         assertThat(result.getThings(), hasSize(2));
-        assertThat(result.getThings().stream().mapToInt(it -> (int) it.getPrice()).sum(), equalTo(143));
+        assertThat(result.getThings().stream().mapToInt(Item::getPrice).sum(), equalTo(143));
     }
 
+
+    /*
+    Edge case: need to replace the list wi
+     */
+    @Test
+    public void testCaseFive() {
+        Item it1 = new Item(1, 30.00F, 41);
+        Item it2 = new Item(2, 15.01F, 20);
+        Item it3 = new Item(3, 15.00F, 20);
+        /*Item it4 = new Item(4, 37.97F, 16);
+        Item it5 = new Item(5, 46.81F, 36);
+        Item it6 = new Item(6, 48.77F, 79);
+        Item it7 = new Item(7, 81.80F, 45);
+        Item it8 = new Item(8, 19.36F, 79); // yes
+        Item it9 = new Item(9, 6.76F, 64); // yes
+        */
+
+        PackageInputRequest request = new PackageInputRequest();
+        request.setInput(Arrays.asList(it1, it2, it3));
+        Package bundle = new Package(56);
+        request.setBundle(bundle);
+        Package result = service.process(request);
+
+        assertThat(result.getThings(), hasSize(1));
+        assertThat(result.getThings().stream().mapToInt(Item::getPrice).sum(), equalTo(41));
+    }
 }

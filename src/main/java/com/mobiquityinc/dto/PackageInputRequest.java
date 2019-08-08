@@ -12,4 +12,5 @@ public class PackageInputRequest {
     private Package bundle;
     private BundleStats stats;
     private List<Item> input = new ArrayList<>();
+
 }
