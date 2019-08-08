@@ -18,18 +18,22 @@ public class SorterService {
                         && hasLessWeightThanAllItemsInTheBucket(item, data.getStats().getCurrentWeight())) {
                     replaceEntireList(data.getBundle().getThings(), item);
                 }
-                data.setStats(getPackageStats(data.getBundle()));
+                updatePackageStatus(data);
             }
         }
         return data.getBundle();
     }
 
-    private boolean hasSpaceFor(Item item, float currentWeight, float maxWeight) {
-        return (item.getWeight() + currentWeight) <= maxWeight;
+    private void updatePackageStatus(PackageInputRequest data) {
+        data.setStats(getPackageStats(data.getBundle()));
     }
 
     private BundleStats getPackageStats(Package bundle) {
         return new BundleStats(getTotalPackageWeightFor(bundle), getTotalCostFor(bundle));
+    }
+
+    private boolean hasSpaceFor(Item item, float currentWeight, float maxWeight) {
+        return (item.getWeight() + currentWeight) <= maxWeight;
     }
 
     private float getTotalPackageWeightFor(Package bundle) {
@@ -42,8 +46,10 @@ public class SorterService {
 
     private float getTotalCostFor(Package bundle) {
         float result = 0;
+        //BigDecimal bd = new BigDecimal(0);
         for (Item it : bundle.getThings()) {
             result += it.getPrice();
+            //bd.add(it.getPrice());
         }
         return result;
     }

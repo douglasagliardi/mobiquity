@@ -3,14 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="9ec48ced-184f-4f8c-af5e-5d0e9d04f16f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mobiquityinc/dto/PackageInputRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mobiquityinc/dto/PackageInputRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mobiquityinc/model/Package.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mobiquityinc/model/Package.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/mobiquityinc/service/PackageSelectorService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mobiquityinc/service/PackageSelectorService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/mobiquityinc/service/SorterService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mobiquityinc/service/SorterService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/mobiquity/service/SorterServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mobiquity/service/SorterServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mobiquityinc/model/Package.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mobiquityinc/model/Package.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mobiquityinc/service/PackageSelectorService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mobiquityinc/service/PackageSelectorService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/mobiquityinc/service/SorterService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mobiquityinc/service/SorterService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/mobiquity/service/SorterServiceTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/mobiquity/service/SorterServiceTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/mobiquity/service/PackageSelectorServiceTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/mobiquity/service/PackageSelectorServiceTest.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -29,90 +26,27 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/mobiquityinc/service/SorterService.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/mobiquity/validate/PackageItemsWeightValidatorTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="164">
-              <caret line="27" selection-start-line="27" selection-end-line="27" />
+            <state relative-caret-position="208">
+              <caret line="38" selection-start-line="38" selection-end-line="38" />
               <folding>
                 <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/mobiquityinc/dto/PackageInputRequest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="11" column="27" lean-forward="true" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="27" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/mobiquityinc/model/Package.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="100">
-              <caret line="9" column="19" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/mobiquityinc/service/PackageSelectorService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
-              <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#658#659#0" expanded="true" />
+                <element signature="e#729#730#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/mobiquity/service/PackageSelectorServiceTest.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/mobiquityinc/service/PackageItemsWeightValidator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="580">
-              <caret line="71" column="8" selection-start-line="71" selection-start-column="8" selection-end-line="71" selection-end-column="8" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1833#1834#0" expanded="true" />
-                <element signature="e#1901#1902#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/mobiquity/service/SorterServiceTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="256">
-              <caret line="119" column="26" selection-start-line="119" selection-start-column="26" selection-end-line="119" selection-end-column="26" />
+            <state relative-caret-position="432">
+              <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/mobiquityinc/model/Item.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="20">
-              <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/mobiquityinc/validate/PackageInputProcessor.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="18" lean-forward="true" selection-start-column="18" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -149,20 +83,26 @@
         <option value="$PROJECT_DIR$/src/main/java/com/mobiquityinc/dto/BundleStats.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/mobiquity/PackageThingsTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/mobiquity/service/SorterServiceTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mobiquityinc/service/SorterService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mobiquityinc/dto/PackageInputRequest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mobiquityinc/service/PackageSelectorService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mobiquityinc/model/Package.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mobiquityinc/model/Item.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/mobiquity/service/PackageSelectorServiceTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mobiquityinc/service/PackageSelectorService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mobiquityinc/service/SorterService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mobiquityinc/service/PackageValidator.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/mobiquity/validate/PackageWeightValidatorTest.java" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mobiquityinc/service/PackageWeightValidator.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/mobiquity/validate/PackageItemsWeightValidatorTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mobiquityinc/service/PackageItemsWeightValidator.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="960" />
-    <option name="y" value="27" />
-    <option name="width" value="960" />
-    <option name="height" value="1053" />
+    <option name="x" value="-120" />
+    <option name="y" value="-1057" />
+    <option name="width" value="1920" />
+    <option name="height" value="1014" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -176,87 +116,23 @@
               <item name="mobiquity" type="b2602c69:ProjectViewProjectNode" />
               <item name="mobiquity" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="mobiquity" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mobiquity" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mobiquity" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mobiquity" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mobiquity" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mobiquity" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mobiquity" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mobiquity" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="mobiquityinc" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mobiquity" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mobiquity" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="mobiquityinc" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mobiquity" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mobiquity" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mobiquity" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mobiquity" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mobiquity" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mobiquity" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="mobiquity" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mobiquity" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mobiquity" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="mobiquity" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="extract.method.default.visibility" value="private" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -270,7 +146,16 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.PackageSelectorServiceTest.t1">
+  <component name="RunManager" selected="JUnit.PackageItemsWeightValidatorTest (2)">
+    <configuration default="true" type="TestNG">
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <method v="2">
@@ -283,89 +168,71 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PackageSelectorServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="PackageItemsWeightValidatorTest (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="mobiquity" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.mobiquity.service.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.mobiquity.service" />
-      <option name="MAIN_CLASS_NAME" value="com.mobiquity.service.PackageSelectorServiceTest" />
-      <option name="METHOD_NAME" value="t1" />
+      <option name="PACKAGE_NAME" value="com.mobiquity.validate" />
+      <option name="MAIN_CLASS_NAME" value="com.mobiquity.validate.PackageItemsWeightValidatorTest" />
+      <option name="METHOD_NAME" value="isValidatorAllowingCorrectItems" />
       <option name="TEST_OBJECT" value="uniqueId" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <uniqueIds>
-        <uniqueId value="[engine:junit-jupiter]/[class:com.mobiquity.service.PackageSelectorServiceTest]" />
+        <uniqueId value="[engine:junit-jupiter]/[class:com.mobiquity.validate.PackageItemsWeightValidatorTest]" />
       </uniqueIds>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PackageSelectorServiceTest.t1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="PackageItemsWeightValidatorTest (2)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="mobiquity" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.mobiquity.service.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.mobiquity.service" />
-      <option name="MAIN_CLASS_NAME" value="com.mobiquity.service.PackageSelectorServiceTest" />
-      <option name="METHOD_NAME" value="t1" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="PACKAGE_NAME" value="com.mobiquity.validate" />
+      <option name="MAIN_CLASS_NAME" value="com.mobiquity.validate.PackageItemsWeightValidatorTest" />
+      <option name="METHOD_NAME" value="isValidatorAllowingCorrectItems" />
+      <option name="TEST_OBJECT" value="uniqueId" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <uniqueIds>
+        <uniqueId value="[engine:junit-jupiter]/[class:com.mobiquity.validate.PackageItemsWeightValidatorTest]" />
+      </uniqueIds>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PackageSelectorServiceTest.t2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="PackageItemsWeightValidatorTest (5)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="mobiquity" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.mobiquity.service.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.mobiquity.service" />
-      <option name="MAIN_CLASS_NAME" value="com.mobiquity.service.PackageSelectorServiceTest" />
-      <option name="METHOD_NAME" value="t2" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="PACKAGE_NAME" value="com.mobiquity.validate" />
+      <option name="MAIN_CLASS_NAME" value="com.mobiquity.validate.PackageItemsWeightValidatorTest" />
+      <option name="TEST_OBJECT" value="uniqueId" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <uniqueIds>
+        <uniqueId value="[engine:junit-jupiter]/[class:com.mobiquity.validate.PackageItemsWeightValidatorTest]" />
+      </uniqueIds>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SorterServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="PackageItemsWeightValidatorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="mobiquity" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.mobiquity.service.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.mobiquity.service" />
-      <option name="MAIN_CLASS_NAME" value="com.mobiquity.service.SorterServiceTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="PACKAGE_NAME" value="com.mobiquity.validate" />
+      <option name="MAIN_CLASS_NAME" value="com.mobiquity.validate.PackageItemsWeightValidatorTest" />
+      <option name="METHOD_NAME" value="isValidatorAllowingCorrectItems" />
+      <option name="TEST_OBJECT" value="uniqueId" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <uniqueIds>
+        <uniqueId value="[engine:junit-jupiter]/[class:com.mobiquity.validate.PackageItemsWeightValidatorTest]" />
+      </uniqueIds>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SorterServiceTest.testCaseFive" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="PackageItemsWeightValidatorTest.isValidatorAllowingCorrectItems" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="mobiquity" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.mobiquity.service.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.mobiquity.service" />
-      <option name="MAIN_CLASS_NAME" value="com.mobiquity.service.SorterServiceTest" />
-      <option name="METHOD_NAME" value="testCaseFive" />
+      <option name="PACKAGE_NAME" value="com.mobiquity.validate" />
+      <option name="MAIN_CLASS_NAME" value="com.mobiquity.validate.PackageItemsWeightValidatorTest" />
+      <option name="METHOD_NAME" value="isValidatorAllowingCorrectItems" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <uniqueIds>
+        <uniqueId value="[engine:junit-jupiter]/[class:com.mobiquity.validate.PackageItemsWeightValidatorTest]" />
+      </uniqueIds>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -373,15 +240,6 @@
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <option name="TEST_OBJECT" value="class" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="TestNG">
-      <option name="TEST_OBJECT" value="CLASS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <properties />
-      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -397,11 +255,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.PackageSelectorServiceTest.t1" />
-        <item itemvalue="JUnit.PackageSelectorServiceTest" />
-        <item itemvalue="JUnit.PackageSelectorServiceTest.t2" />
-        <item itemvalue="JUnit.SorterServiceTest.testCaseFive" />
-        <item itemvalue="JUnit.SorterServiceTest" />
+        <item itemvalue="JUnit.PackageItemsWeightValidatorTest (2)" />
+        <item itemvalue="JUnit.PackageItemsWeightValidatorTest (1)" />
+        <item itemvalue="JUnit.PackageItemsWeightValidatorTest" />
+        <item itemvalue="JUnit.PackageItemsWeightValidatorTest.isValidatorAllowingCorrectItems" />
+        <item itemvalue="JUnit.PackageItemsWeightValidatorTest (5)" />
       </list>
     </recent_temporary>
   </component>
@@ -420,60 +278,60 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="PackageSelectorServiceTest_t1 - 2019.08.07 at 23h 58m 37s.xml">
-      <configuration name="PackageSelectorServiceTest.t1" configurationId="JUnit" />
+    <history-entry file="PackageItemsWeightValidatorTest_(2) - 2019.08.08 at 14h 33m 34s.xml">
+      <configuration name="PackageItemsWeightValidatorTest (2)" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PackageSelectorServiceTest_t1 - 2019.08.07 at 23h 59m 08s.xml">
-      <configuration name="PackageSelectorServiceTest.t1" configurationId="JUnit" />
+    <history-entry file="PackageItemsWeightValidatorTest_(3) - 2019.08.08 at 14h 34m 40s.xml">
+      <configuration name="PackageItemsWeightValidatorTest (3)" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PackageSelectorServiceTest_t1 - 2019.08.07 at 23h 59m 37s.xml">
-      <configuration name="PackageSelectorServiceTest.t1" configurationId="JUnit" />
+    <history-entry file="PackageItemsWeightValidatorTest_(4) - 2019.08.08 at 14h 35m 58s.xml">
+      <configuration name="PackageItemsWeightValidatorTest (4)" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PackageSelectorServiceTest_t2 - 2019.08.08 at 00h 01m 28s.xml">
-      <configuration name="PackageSelectorServiceTest.t2" configurationId="JUnit" />
+    <history-entry file="PackageItemsWeightValidatorTest_(5) - 2019.08.08 at 14h 36m 37s.xml">
+      <configuration name="PackageItemsWeightValidatorTest (5)" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PackageSelectorServiceTest_t1 - 2019.08.08 at 00h 07m 47s.xml">
-      <configuration name="PackageSelectorServiceTest.t1" configurationId="JUnit" />
+    <history-entry file="PackageItemsWeightValidatorTest_isValidatorAllowingCorrectItems - 2019.08.08 at 14h 37m 55s.xml">
+      <configuration name="PackageItemsWeightValidatorTest.isValidatorAllowingCorrectItems" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PackageSelectorServiceTest - 2019.08.08 at 00h 26m 01s.xml">
-      <configuration name="PackageSelectorServiceTest" configurationId="JUnit" />
+    <history-entry file="PackageItemsWeightValidatorTest_isValidatorAllowingCorrectItems - 2019.08.08 at 14h 40m 09s.xml">
+      <configuration name="PackageItemsWeightValidatorTest.isValidatorAllowingCorrectItems" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PackageSelectorServiceTest_t1 - 2019.08.08 at 00h 31m 57s.xml">
-      <configuration name="PackageSelectorServiceTest.t1" configurationId="JUnit" />
+    <history-entry file="PackageItemsWeightValidatorTest_isValidatorAllowingCorrectItems - 2019.08.08 at 14h 40m 13s.xml">
+      <configuration name="PackageItemsWeightValidatorTest.isValidatorAllowingCorrectItems" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PackageSelectorServiceTest_t1 - 2019.08.08 at 00h 32m 15s.xml">
-      <configuration name="PackageSelectorServiceTest.t1" configurationId="JUnit" />
+    <history-entry file="PackageItemsWeightValidatorTest - 2019.08.08 at 14h 40m 18s.xml">
+      <configuration name="PackageItemsWeightValidatorTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PackageSelectorServiceTest_t1 - 2019.08.08 at 00h 32m 44s.xml">
-      <configuration name="PackageSelectorServiceTest.t1" configurationId="JUnit" />
+    <history-entry file="PackageItemsWeightValidatorTest_(1) - 2019.08.08 at 14h 42m 10s.xml">
+      <configuration name="PackageItemsWeightValidatorTest (1)" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PackageSelectorServiceTest_t1 - 2019.08.08 at 00h 36m 26s.xml">
-      <configuration name="PackageSelectorServiceTest.t1" configurationId="JUnit" />
+    <history-entry file="PackageItemsWeightValidatorTest_(2) - 2019.08.08 at 14h 42m 42s.xml">
+      <configuration name="PackageItemsWeightValidatorTest (2)" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
     <option name="totallyTimeSpent" value="25006000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="27" width="1920" height="1053" extended-state="6" />
+    <frame x="-120" y="-1057" width="1920" height="1057" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.14957266" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19914803" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="0" weight="0.32894737" />
+      <window_info anchor="bottom" id="Messages" order="0" weight="0.32847533" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" weight="0.32894737" />
-      <window_info active="true" anchor="bottom" id="Run" order="3" visible="true" weight="0.32894737" />
-      <window_info anchor="bottom" id="Debug" order="4" weight="0.3991228" />
+      <window_info active="true" anchor="bottom" id="Run" order="3" visible="true" weight="0.30362695" />
+      <window_info anchor="bottom" id="Debug" order="4" weight="0.39896372" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="7" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Database Changes" order="10" />
-      <window_info anchor="bottom" id="Terminal" order="11" weight="0.33004385" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.32953367" />
       <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -517,18 +375,6 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/mobiquityinc/service/SorterService.java</url>
-          <line>12</line>
-          <properties />
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/mobiquityinc/service/SorterService.java</url>
-          <line>27</line>
-          <properties />
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/mobiquity/service/SorterServiceTest.java</url>
           <line>136</line>
           <properties />
@@ -540,13 +386,14 @@
           <properties />
           <option name="timeStamp" value="4" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/mobiquityinc/service/PackageItemsWeightValidator.java</url>
+          <line>19</line>
+          <properties />
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
-  </component>
-  <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/mobiquity$SorterServiceTest_testCase1.ic" NAME="SorterServiceTest.testCase1 Coverage Results" MODIFIED="1565054747943" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>com.mobiquity.service.*</FILTER>
-    </SUITE>
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="evaluateExpression">
@@ -568,13 +415,7 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar:///usr/lib/jvm/java-8-oracle/src.zip!/java/lang/Package.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-6">
-          <caret line="100" column="69" lean-forward="true" selection-start-line="100" selection-start-column="69" selection-end-line="100" selection-end-column="69" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar:///usr/lib/jvm/java-8-oracle/src.zip!/java/lang/Package.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/mobiquityinc/dto/PackageStatistic.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/mobiquityinc/exception/PackageOverWeightException.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -585,13 +426,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/mobiquity/PackageThingsTest.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/mobiquityinc/service/BundleService.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mobiquityinc/helper/FileReader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="12" column="19" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/mobiquityinc/dto/BundleStats.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="160">
@@ -609,85 +443,51 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mobiquityinc/service/SorterService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="164">
-          <caret line="27" selection-start-line="27" selection-end-line="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///usr/lib/jvm/java-8-oracle/src.zip!/java/util/Comparator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-7">
-          <caret line="228" column="69" selection-start-line="228" selection-start-column="66" selection-end-line="228" selection-end-column="69" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///usr/lib/jvm/java-8-oracle/src.zip!/java/util/stream/Collectors.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="1317" column="58" lean-forward="true" selection-start-line="1317" selection-start-column="58" selection-end-line="1317" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mobiquityinc/validate/PackageInputProcessor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="18" lean-forward="true" selection-start-column="18" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar:///usr/lib/jvm/java-8-oracle/src.zip!/java/util/Comparator.java" />
+    <entry file="jar:///usr/lib/jvm/java-8-oracle/src.zip!/java/util/stream/Collectors.java" />
+    <entry file="jar:///usr/lib/jvm/java-8-oracle/src.zip!/java/lang/Double.java" />
+    <entry file="jar:///usr/lib/jvm/java-8-oracle/src.zip!/java/util/Collection.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/mobiquityinc/dto/PackageInputRequest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="11" column="27" lean-forward="true" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="27" />
+        <state relative-caret-position="198">
+          <caret line="11" column="27" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="27" />
           <folding>
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///usr/lib/jvm/java-8-oracle/src.zip!/java/lang/Double.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-6">
-          <caret line="877" column="73" lean-forward="true" selection-start-line="877" selection-start-column="73" selection-end-line="878" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///usr/lib/jvm/java-8-oracle/src.zip!/java/util/Collection.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
-          <caret line="579" column="22" selection-start-line="579" selection-start-column="22" selection-end-line="579" selection-end-column="22" />
-          <folding>
-            <element signature="e#26957#26958#0" expanded="true" />
-            <element signature="e#27022#27023#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/mobiquityinc/model/Package.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
+        <state relative-caret-position="90">
           <caret line="9" column="19" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mobiquityinc/service/PackageSelectorService.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mobiquityinc/model/Item.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+        <state relative-caret-position="18">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mobiquityinc/service/SorterService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#1089#1090#0" expanded="true" />
+            <element signature="e#1153#1154#0" expanded="true" />
+            <element signature="e#2339#2340#0" expanded="true" />
+            <element signature="e#2386#2387#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/mobiquity/service/SorterServiceTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
+        <state relative-caret-position="831">
           <caret line="119" column="26" selection-start-line="119" selection-start-column="26" selection-end-line="119" selection-end-column="26" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -695,21 +495,108 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mobiquityinc/model/Item.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mobiquityinc/service/PackageSelectorService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="20">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        <state relative-caret-position="270">
+          <caret line="15" column="16" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/mobiquity/service/PackageSelectorServiceTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="580">
-          <caret line="71" column="8" selection-start-line="71" selection-start-column="8" selection-end-line="71" selection-end-column="8" />
+        <state relative-caret-position="216">
+          <caret line="21" column="46" lean-forward="true" selection-start-line="20" selection-start-column="8" selection-end-line="21" selection-end-column="46" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1833#1834#0" expanded="true" />
-            <element signature="e#1901#1902#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mobiquityinc/helper/FileReader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="12" column="19" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mobiquityinc/validate/PackageInputProcessor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="18" selection-start-column="18" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="54">
+            <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/junit/jupiter/junit-jupiter-api/5.5.1/junit-jupiter-api-5.5.1.jar!/org/junit/jupiter/api/BeforeEach.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="22" column="18" selection-start-line="22" selection-start-column="18" selection-end-line="22" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/mobiquity/validate/PackageWeightValidatorTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="265">
+          <caret line="25" column="39" selection-start-line="25" selection-start-column="39" selection-end-line="25" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mobiquityinc/service/PackageValidator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="14" column="28" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mobiquityinc/service/PackageWeightValidator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="19" column="9" lean-forward="true" selection-start-line="19" selection-start-column="9" selection-end-line="19" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/mobiquity/validate/PackageItemsWeightValidatorTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="38" selection-start-line="38" selection-end-line="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#658#659#0" expanded="true" />
+            <element signature="e#729#730#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mobiquityinc/service/PackageItemsWeightValidator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

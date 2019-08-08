@@ -12,6 +12,7 @@ public class PackageSelectorService {
         return packageList.stream()
                 .sorted(Comparator.comparing(Package::getMaxWeightAllowed)
                         .thenComparing(it -> it.getThings().stream().mapToInt(Item::getPrice).sum()))
-                .findFirst().get();
+                .findFirst()
+                .get();
     }
 }
