@@ -6,8 +6,11 @@ import com.mobiquityinc.model.Package;
 import com.mobiquityinc.service.SorterService;
 import org.junit.jupiter.api.Test;
 
+import java.math.BigDecimal;
+import java.math.RoundingMode;
 import java.util.Arrays;
 import java.util.Collections;
+import java.util.List;
 
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.equalTo;
@@ -85,7 +88,7 @@ public class SorterServiceTest {
         Package result = service.process(request);
 
         assertThat(result.getThings(), hasSize(3));
-        assertThat(result.getThings().stream().mapToInt(it -> (int) it.getPrice()).sum(), equalTo(145));
+        assertThat(result.getThings().stream().mapToInt(Item::getPrice).sum(), equalTo(145));
     }
 
     @Test
@@ -113,20 +116,13 @@ public class SorterServiceTest {
 
 
     /*
-    Edge case: need to replace the list wi
+        Edge case: need to replace the list wi
      */
     @Test
     public void testCaseFive() {
         Item it1 = new Item(1, 30.00F, 41);
         Item it2 = new Item(2, 15.01F, 20);
         Item it3 = new Item(3, 15.00F, 20);
-        /*Item it4 = new Item(4, 37.97F, 16);
-        Item it5 = new Item(5, 46.81F, 36);
-        Item it6 = new Item(6, 48.77F, 79);
-        Item it7 = new Item(7, 81.80F, 45);
-        Item it8 = new Item(8, 19.36F, 79); // yes
-        Item it9 = new Item(9, 6.76F, 64); // yes
-        */
 
         PackageInputRequest request = new PackageInputRequest();
         request.setInput(Arrays.asList(it1, it2, it3));
@@ -134,7 +130,22 @@ public class SorterServiceTest {
         request.setBundle(bundle);
         Package result = service.process(request);
 
-        assertThat(result.getThings(), hasSize(1));
-        assertThat(result.getThings().stream().mapToInt(Item::getPrice).sum(), equalTo(41));
+        assertThat(result.getThings(), hasSize(2));
+        assertThat(round(sumItemsWeightInThePackage(result.getThings())), equalTo(45.01));
+        assertThat(sumItemsPriceInThePackage(result.getThings()), equalTo(61));
+    }
+
+    private int sumItemsPriceInThePackage(List<Item> items) {
+        return items.stream().mapToInt(Item::getPrice).sum();
+    }
+
+    private double sumItemsWeightInThePackage(List<Item> items) {
+        return items.stream().mapToDouble(Item::getWeight).sum();
+    }
+
+    private double round(double value) {
+        BigDecimal tmp = BigDecimal.valueOf(value);
+        tmp = tmp.setScale(2, RoundingMode.HALF_UP);
+        return tmp.doubleValue();
     }
 }

@@ -3,7 +3,7 @@ package com.mobiquity.validate;
 import com.mobiquityinc.dto.PackageInputRequest;
 import com.mobiquityinc.model.Item;
 import com.mobiquityinc.model.Package;
-import com.mobiquityinc.service.PackageItemsWeightValidator;
+import com.mobiquityinc.service.PackageItemsWeightAndCostValidator;
 import com.mobiquityinc.service.PackageValidator;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -11,10 +11,10 @@ import org.junit.jupiter.api.Test;
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;
 
-public class PackageItemsWeightValidatorTest {
+public class PackageItemsWeightAndCostValidatorTest {
 
     private PackageInputRequest request;
-    private PackageValidator packageWeightValidator = new PackageItemsWeightValidator();
+    private PackageValidator packageWeightValidator = new PackageItemsWeightAndCostValidator();
 
     @BeforeEach
     void setup() {

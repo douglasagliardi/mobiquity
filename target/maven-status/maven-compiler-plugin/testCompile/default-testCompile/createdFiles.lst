@@ -1,0 +1,6 @@
+com/mobiquity/service/SorterServiceTest.class
+com/mobiquity/helper/FileReaderTest.class
+com/mobiquity/validate/PackageWeightValidatorTest.class
+com/mobiquity/validate/PackageItemsWeightAndCostValidatorTest.class
+com/mobiquity/validate/PackageItemsValidatorTest.class
+com/mobiquity/service/PackageSelectorServiceTest.class

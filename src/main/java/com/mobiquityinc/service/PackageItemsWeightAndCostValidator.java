@@ -5,14 +5,14 @@ import com.mobiquityinc.model.Item;
 import lombok.NoArgsConstructor;
 
 @NoArgsConstructor
-public class PackageItemsWeightValidator extends PackageValidator {
+public class PackageItemsWeightAndCostValidator extends PackageValidator {
 
     private int MAX_ITEM_WEIGHT_ALLOWED = 100;
     private int MAX_ITEM_COST_ALLOWED = 100;
 
-    public PackageItemsWeightValidator(int maxItemWeightAllowed, int maxItemCostAllowed) {
+    public PackageItemsWeightAndCostValidator(int maxItemWeightAllowed, int maxItemCostAllowed) {
         MAX_ITEM_WEIGHT_ALLOWED = maxItemWeightAllowed;
-        MAX_ITEM_COST_ALLOWED =  maxItemCostAllowed;
+        MAX_ITEM_COST_ALLOWED = maxItemCostAllowed;
     }
 
     @Override
@@ -27,7 +27,7 @@ public class PackageItemsWeightValidator extends PackageValidator {
         return item.getWeight() >= MAX_ITEM_WEIGHT_ALLOWED;
     }
 
-    private boolean hasItemCostNotPermitted(Item item){
+    private boolean hasItemCostNotPermitted(Item item) {
         return item.getPrice() >= MAX_ITEM_COST_ALLOWED;
     }
 }

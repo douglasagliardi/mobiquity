@@ -6,7 +6,7 @@ import java.util.Objects;
 
 public abstract class PackageValidator {
 
-    private PackageValidator nextValidator;
+    protected PackageValidator nextValidator;
 
     public PackageValidator linkToNext(PackageValidator packageValidator) {
         return this.nextValidator = packageValidator;
