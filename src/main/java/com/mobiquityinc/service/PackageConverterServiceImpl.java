@@ -6,6 +6,8 @@ import com.mobiquityinc.exception.APIException;
 import com.mobiquityinc.helper.DataTypeConverter;
 import com.mobiquityinc.model.Item;
 import com.mobiquityinc.model.Package;
+import com.mobiquityinc.model.PackageDecorator;
+import com.mobiquityinc.model.PackagePrintDecorator;
 import com.mobiquityinc.validate.PackageItemsWeightAndCostValidator;
 import com.mobiquityinc.validate.PackageValidator;
 import com.mobiquityinc.validate.PackageWeightValidator;
@@ -37,7 +39,7 @@ public class PackageConverterServiceImpl implements PackageConverterService {
     @Override
     public PackageInputRequest convert(RawPackage rawPackage) {
         PackageInputRequest request = new PackageInputRequest();
-        Package pkg = new Package(dataConverter.convertToFloat(rawPackage.getMaxWeight()));
+        PackageDecorator pkg = new PackagePrintDecorator(new Package(dataConverter.convertToFloat(rawPackage.getMaxWeight())));
         for (String item : rawPackage.getItems()) {
             request.getInput().add(produceItem(item));
         }

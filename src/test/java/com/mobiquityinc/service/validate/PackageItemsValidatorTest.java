@@ -4,6 +4,8 @@ import com.mobiquityinc.dto.PackageInputRequest;
 import com.mobiquityinc.exception.PackageOverWeightException;
 import com.mobiquityinc.model.Item;
 import com.mobiquityinc.model.Package;
+import com.mobiquityinc.model.PackageDecorator;
+import com.mobiquityinc.model.PackagePrintDecorator;
 import com.mobiquityinc.validate.PackageItemsWeightAndCostValidator;
 import com.mobiquityinc.validate.PackageValidator;
 import com.mobiquityinc.validate.PackageWeightValidator;
@@ -30,7 +32,7 @@ public class PackageItemsValidatorTest {
 
     @Test
     public void isValidationChainWorkingProperly() {
-        Package p1 = new Package(90);
+        PackageDecorator p1 = new PackagePrintDecorator(new Package(90));
         p1.addItemTo(new Item(1, 20.00F, 20));
         p1.addItemTo(new Item(2, 40.00F, 35));
         p1.addItemTo(new Item(3, 25.00F, 80));
@@ -43,7 +45,7 @@ public class PackageItemsValidatorTest {
     @Test
     public void isChainOfValidationWorkingWithPackageWithMoreWeightThanAllowed() {
         PackageInputRequest request = new PackageInputRequest();
-        Package p1 = new Package(101);
+        PackageDecorator p1 = new PackagePrintDecorator(new Package(101));
         p1.addItemTo(new Item(1, 20.00F, 30));
         p1.addItemTo(new Item(2, 80.00F, 40));
         request.setBundle(p1);
@@ -55,7 +57,7 @@ public class PackageItemsValidatorTest {
     @Test
     public void isChainOfValidationWorkingWithItemsWithMoreWeightThanAllowed() {
         PackageInputRequest request = new PackageInputRequest();
-        Package p1 = new Package(100);
+        PackageDecorator p1 = new PackagePrintDecorator(new Package(100));
         p1.addItemTo(new Item(1, 20.00F, 30));
         p1.addItemTo(new Item(2, 110.00F, 40)); // validation fails because there is an item with more weight than it should
         request.setBundle(p1);

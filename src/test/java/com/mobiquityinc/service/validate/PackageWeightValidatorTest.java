@@ -4,6 +4,8 @@ import com.mobiquityinc.dto.PackageInputRequest;
 import com.mobiquityinc.exception.PackageOverWeightException;
 import com.mobiquityinc.model.Item;
 import com.mobiquityinc.model.Package;
+import com.mobiquityinc.model.PackageDecorator;
+import com.mobiquityinc.model.PackagePrintDecorator;
 import com.mobiquityinc.validate.PackageValidator;
 import com.mobiquityinc.validate.PackageWeightValidator;
 import org.junit.jupiter.api.Assertions;
@@ -18,7 +20,7 @@ public class PackageWeightValidatorTest {
     public void isValidatorNotAllowingPackageWithInvalidWeight() {
         PackageValidator packageWeightValidator = new PackageWeightValidator();
         PackageInputRequest request = new PackageInputRequest();
-        Package p1 = new Package(101);
+        PackageDecorator p1 = new PackagePrintDecorator(new Package(101));
         p1.addItemTo(new Item(1, 20.00F, 30));
         request.setBundle(p1);
 
@@ -30,7 +32,7 @@ public class PackageWeightValidatorTest {
     public void isValidatorAcceptingRegularRequest() {
         PackageValidator packageWeightValidator = new PackageWeightValidator();
         PackageInputRequest request = new PackageInputRequest();
-        Package p1 = new Package(80);
+        PackageDecorator p1 = new PackagePrintDecorator(new Package(80));
         p1.addItemTo(new Item(1, 20.00F, 30));
         request.setBundle(p1);
 

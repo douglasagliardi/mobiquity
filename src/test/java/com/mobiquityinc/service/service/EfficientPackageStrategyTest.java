@@ -1,8 +1,11 @@
 package com.mobiquityinc.service.service;
 
 import com.mobiquityinc.dto.PackageInputRequest;
+import com.mobiquityinc.model.BasePackage;
 import com.mobiquityinc.model.Item;
 import com.mobiquityinc.model.Package;
+import com.mobiquityinc.model.PackageDecorator;
+import com.mobiquityinc.model.PackagePrintDecorator;
 import com.mobiquityinc.service.EfficientPackageStrategy;
 import com.mobiquityinc.service.PackageStrategy;
 import org.junit.jupiter.api.Test;
@@ -47,9 +50,9 @@ public class EfficientPackageStrategyTest {
 
         PackageInputRequest request = new PackageInputRequest();
         request.setInput(Arrays.asList(it1, it2, it3, it4, it5, it6));
-        Package bundle = new Package(81);
+        PackageDecorator bundle = new PackagePrintDecorator(new Package(81));
         request.setBundle(bundle);
-        Package result = service.process(request);
+        BasePackage result = service.process(request);
 
         assertThat(result.getThings(), hasSize(1));
         assertThat(result.getThings().get(0).getWeight(), equalTo(72.30F));
@@ -62,9 +65,9 @@ public class EfficientPackageStrategyTest {
 
         PackageInputRequest request = new PackageInputRequest();
         request.setInput(Collections.singletonList(it1));
-        Package bundle = new Package(8);
+        PackageDecorator bundle = new PackagePrintDecorator(new Package(8));
         request.setBundle(bundle);
-        Package result = service.process(request);
+        BasePackage result = service.process(request);
 
         assertThat(result.getThings(), hasSize(0));
     }
@@ -84,9 +87,9 @@ public class EfficientPackageStrategyTest {
 
         PackageInputRequest request = new PackageInputRequest();
         request.setInput(Arrays.asList(it1, it2, it3, it4, it5, it6, it7, it8, it9));
-        Package bundle = new Package(75);
+        PackageDecorator bundle = new PackagePrintDecorator(new Package(75));
         request.setBundle(bundle);
-        Package result = service.process(request);
+        BasePackage result = service.process(request);
 
         assertThat(result.getThings(), hasSize(3));
         assertThat(result.getThings().stream().mapToInt(Item::getPrice).sum(), equalTo(145));
@@ -107,9 +110,9 @@ public class EfficientPackageStrategyTest {
 
         PackageInputRequest request = new PackageInputRequest();
         request.setInput(Arrays.asList(it1, it2, it3, it4, it5, it6, it7, it8, it9));
-        Package bundle = new Package(56);
+        PackageDecorator bundle = new PackagePrintDecorator(new Package(56));
         request.setBundle(bundle);
-        Package result = service.process(request);
+        BasePackage result = service.process(request);
 
         assertThat(result.getThings(), hasSize(2));
         assertThat(result.getThings().stream().mapToInt(Item::getPrice).sum(), equalTo(143));
@@ -127,9 +130,9 @@ public class EfficientPackageStrategyTest {
 
         PackageInputRequest request = new PackageInputRequest();
         request.setInput(Arrays.asList(it1, it2, it3));
-        Package bundle = new Package(56);
+        PackageDecorator bundle = new PackagePrintDecorator(new Package(56));
         request.setBundle(bundle);
-        Package result = service.process(request);
+        BasePackage result = service.process(request);
 
         assertThat(result.getThings(), hasSize(2));
         assertThat(round(sumItemsWeightInThePackage(result.getThings())), equalTo(45.01));

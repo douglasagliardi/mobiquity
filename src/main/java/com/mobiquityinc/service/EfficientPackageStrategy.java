@@ -2,15 +2,15 @@ package com.mobiquityinc.service;
 
 import com.mobiquityinc.dto.BundleStats;
 import com.mobiquityinc.dto.PackageInputRequest;
+import com.mobiquityinc.model.BasePackage;
 import com.mobiquityinc.model.Item;
-import com.mobiquityinc.model.Package;
 
 import java.util.List;
 
 public class EfficientPackageStrategy implements PackageStrategy {
 
     @Override
-    public Package process(PackageInputRequest data) {
+    public BasePackage process(PackageInputRequest data) {
         for (Item item : data.getInput()) {
             if (item.getWeight() <= data.getBundle().getMaxWeightAllowed()) {
                 if (hasSpaceFor(item, data.getStats().getCurrentWeight(), data.getBundle().getMaxWeightAllowed())) {
@@ -25,7 +25,7 @@ public class EfficientPackageStrategy implements PackageStrategy {
         return data.getBundle();
     }
 
-    private void updatePackageStatus(Package aPackage, BundleStats currentStatus) {
+    private void updatePackageStatus(BasePackage aPackage, BundleStats currentStatus) {
         currentStatus.setCurrentWeight(getTotalPackageWeightFor(aPackage));
         currentStatus.setCurrentCost(getTotalCostFor(aPackage));
     }
@@ -34,7 +34,7 @@ public class EfficientPackageStrategy implements PackageStrategy {
         return (item.getWeight() + currentWeight) <= maxWeight;
     }
 
-    private float getTotalPackageWeightFor(Package bundle) {
+    private float getTotalPackageWeightFor(BasePackage bundle) {
         float result = 0;
         for (Item it : bundle.getThings()) {
             result += it.getWeight();
@@ -42,7 +42,7 @@ public class EfficientPackageStrategy implements PackageStrategy {
         return result;
     }
 
-    private float getTotalCostFor(Package bundle) {
+    private float getTotalCostFor(BasePackage bundle) {
         float result = 0;
         for (Item it : bundle.getThings()) {
             result += it.getPrice();

@@ -4,9 +4,11 @@
 /Users/dagliardi/Development/Isobar/EHI/mobiquity/src/main/java/com/mobiquityinc/validate/PackageItemsWeightAndCostValidator.java
 /Users/dagliardi/Development/Isobar/EHI/mobiquity/src/main/java/com/mobiquityinc/service/PackageConverterServiceImpl.java
 /Users/dagliardi/Development/Isobar/EHI/mobiquity/src/main/java/com/mobiquityinc/service/EfficientPackageStrategy.java
+/Users/dagliardi/Development/Isobar/EHI/mobiquity/src/main/java/com/mobiquityinc/model/PackageDecorator.java
 /Users/dagliardi/Development/Isobar/EHI/mobiquity/src/main/java/com/mobiquityinc/model/Item.java
 /Users/dagliardi/Development/Isobar/EHI/mobiquity/src/main/java/com/mobiquityinc/service/PackageConverterService.java
 /Users/dagliardi/Development/Isobar/EHI/mobiquity/src/main/java/com/mobiquityinc/helper/DataTypeConverter.java
+/Users/dagliardi/Development/Isobar/EHI/mobiquity/src/main/java/com/mobiquityinc/model/PackagePrintDecorator.java
 /Users/dagliardi/Development/Isobar/EHI/mobiquity/src/main/java/com/mobiquityinc/exception/PackageOverWeightException.java
 /Users/dagliardi/Development/Isobar/EHI/mobiquity/src/main/java/com/mobiquityinc/dto/RawPackage.java
 /Users/dagliardi/Development/Isobar/EHI/mobiquity/src/main/java/com/mobiquityinc/model/Package.java
@@ -18,4 +20,5 @@
 /Users/dagliardi/Development/Isobar/EHI/mobiquity/src/main/java/com/mobiquityinc/dto/BundleStats.java
 /Users/dagliardi/Development/Isobar/EHI/mobiquity/src/main/java/com/mobiquityinc/exception/NoPackageEligibleForSelectionException.java
 /Users/dagliardi/Development/Isobar/EHI/mobiquity/src/main/java/com/mobiquityinc/validate/PackageWeightValidator.java
+/Users/dagliardi/Development/Isobar/EHI/mobiquity/src/main/java/com/mobiquityinc/model/IPackage.java
 /Users/dagliardi/Development/Isobar/EHI/mobiquity/src/main/java/com/mobiquityinc/service/PackageStrategy.java

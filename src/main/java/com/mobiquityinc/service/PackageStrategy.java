@@ -1,9 +1,9 @@
 package com.mobiquityinc.service;
 
 import com.mobiquityinc.dto.PackageInputRequest;
-import com.mobiquityinc.model.Package;
+import com.mobiquityinc.model.BasePackage;
 
 public interface PackageStrategy {
 
-    Package process(PackageInputRequest data);
+    BasePackage process(PackageInputRequest data);
 }

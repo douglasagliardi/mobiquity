@@ -1,6 +1,7 @@
 package com.mobiquityinc.service.service;
 
 import com.mobiquityinc.exception.NoPackageEligibleForSelectionException;
+import com.mobiquityinc.model.BasePackage;
 import com.mobiquityinc.model.Item;
 import com.mobiquityinc.model.Package;
 import com.mobiquityinc.service.PackageSelectorService;
@@ -13,7 +14,9 @@ import java.util.Arrays;
 import java.util.List;
 
 import static org.hamcrest.MatcherAssert.assertThat;
-import static org.hamcrest.Matchers.*;
+import static org.hamcrest.Matchers.equalTo;
+import static org.hamcrest.Matchers.is;
+import static org.hamcrest.Matchers.notNullValue;
 
 public class PackageSelectorServiceTest {
 
@@ -27,7 +30,7 @@ public class PackageSelectorServiceTest {
         Package p3 = new Package(56);
         p3.addItemTo(new Item(1, 20.00F, 31));
 
-        Package result = selectorService.select(Arrays.asList(p1, p2, p3));
+        BasePackage result = selectorService.select(Arrays.asList(p1, p2, p3));
         assertThat(result, is(notNullValue()));
         assertThat(sumItemsPriceInThePackage(result.getThings()), equalTo(31));
     }
@@ -40,7 +43,7 @@ public class PackageSelectorServiceTest {
         Package p3 = new Package(56);
         p3.addItemTo(new Item(1, 20.01F, 30));
 
-        Package result = selectorService.select(Arrays.asList(p1, p3));
+        BasePackage result = selectorService.select(Arrays.asList(p1, p3));
         assertThat(result, is(notNullValue()));
         assertThat(round(sumItemsWeightInThePackage(result.getThings())), equalTo(20.01));
     }
@@ -56,7 +59,7 @@ public class PackageSelectorServiceTest {
         p3.addItemTo(new Item(1, 11.00F, 15));
         p3.addItemTo(new Item(2, 10.00F, 15));
 
-        Package result = selectorService.select(Arrays.asList(p1, p2, p3));
+        BasePackage result = selectorService.select(Arrays.asList(p1, p2, p3));
         assertThat(result, is(notNullValue()));
         assertThat(result.getThings().size(), equalTo(1));
         assertThat(sumItemsPriceInThePackage(result.getThings()), equalTo(30));
