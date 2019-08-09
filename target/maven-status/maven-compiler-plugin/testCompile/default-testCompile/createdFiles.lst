@@ -1,8 +1,9 @@
 com/mobiquityinc/service/validate/PackageItemsWeightAndCostValidatorTest.class
-com/mobiquityinc/service/PackageConverterServiceImplTest.class
 com/mobiquityinc/service/service/PackageSelectorServiceTest.class
 com/mobiquityinc/service/service/RawPackageReaderConverterTest.class
+com/mobiquityinc/service/service/PackageConverterServiceImplTest.class
 com/mobiquityinc/service/service/EfficientPackageStrategyTest.class
 com/mobiquityinc/service/validate/PackageWeightValidatorTest.class
+com/mobiquityinc/service/PackerTest.class
 com/mobiquityinc/service/validate/PackageItemsValidatorTest.class
 com/mobiquityinc/service/helper/FileReaderTest.class

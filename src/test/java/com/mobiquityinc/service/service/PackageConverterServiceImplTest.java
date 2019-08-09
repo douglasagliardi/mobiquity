@@ -1,8 +1,9 @@
-package com.mobiquityinc.service;
+package com.mobiquityinc.service.service;
 
 import com.mobiquityinc.dto.PackageInputRequest;
 import com.mobiquityinc.dto.RawPackage;
 import com.mobiquityinc.helper.DataTypeConverter;
+import com.mobiquityinc.service.PackageConverterServiceImpl;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mockito;
@@ -40,12 +41,12 @@ public class PackageConverterServiceImplTest {
     @Test
     public void isConversionReturningTheExpectedObjectWithAllPreFilledFields() {
         RawPackage rawPackage = new RawPackage();
-        rawPackage.setMaxWeight("50");
+        rawPackage.setMaxWeight("50.00F");
         rawPackage.setItems(Collections.singletonList("1, 50.00F, 50"));
         PackageInputRequest result = packageConverterService.convert(rawPackage);
         assertThat(result, notNullValue());
         assertThat(result.getBundle().getMaxWeightAllowed(), equalTo(50.0F));
-        assertThat(result.getBundle().getThings(), hasSize(1));
+        assertThat(result.getInput(), hasSize(1));
     }
 
     @Test
@@ -55,6 +56,6 @@ public class PackageConverterServiceImplTest {
         rawPackage.setItems(Arrays.asList("1, 50.00F, 50", "2, 10.00F, 10"));
         List<PackageInputRequest> result = packageConverterService.convert(Collections.singletonList(rawPackage));
         assertThat(result, notNullValue());
-        assertThat(result.get(0).getBundle().getThings(), hasSize(2));
+        assertThat(result.get(0).getInput(), hasSize(2));
     }
 }

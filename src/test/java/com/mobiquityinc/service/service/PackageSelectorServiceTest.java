@@ -1,8 +1,10 @@
 package com.mobiquityinc.service.service;
 
+import com.mobiquityinc.exception.NoPackageEligibleForSelectionException;
 import com.mobiquityinc.model.Item;
 import com.mobiquityinc.model.Package;
 import com.mobiquityinc.service.PackageSelectorService;
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 import java.math.BigDecimal;
@@ -58,6 +60,15 @@ public class PackageSelectorServiceTest {
         assertThat(result, is(notNullValue()));
         assertThat(result.getThings().size(), equalTo(1));
         assertThat(sumItemsPriceInThePackage(result.getThings()), equalTo(30));
+    }
+
+    @Test
+    public void isSelectorNotConsideringPackageWithoutItems() {
+        PackageSelectorService selectorService = new PackageSelectorService();
+        Package p1 = new Package(57);
+        Package p3 = new Package(56);
+
+        Assertions.assertThrows(NoPackageEligibleForSelectionException.class, () -> selectorService.select(Arrays.asList(p1, p3)));
     }
 
     private int sumItemsPriceInThePackage(List<Item> items) {

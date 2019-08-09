@@ -16,5 +16,6 @@
 /Users/dagliardi/Development/Isobar/EHI/mobiquity/src/main/java/com/mobiquityinc/packer/Packer.java
 /Users/dagliardi/Development/Isobar/EHI/mobiquity/src/main/java/com/mobiquityinc/service/RawPackageReaderConverter.java
 /Users/dagliardi/Development/Isobar/EHI/mobiquity/src/main/java/com/mobiquityinc/dto/BundleStats.java
+/Users/dagliardi/Development/Isobar/EHI/mobiquity/src/main/java/com/mobiquityinc/exception/NoPackageEligibleForSelectionException.java
 /Users/dagliardi/Development/Isobar/EHI/mobiquity/src/main/java/com/mobiquityinc/validate/PackageWeightValidator.java
 /Users/dagliardi/Development/Isobar/EHI/mobiquity/src/main/java/com/mobiquityinc/service/PackageStrategy.java

@@ -7,6 +7,7 @@ com/mobiquityinc/packer/Packer.class
 com/mobiquityinc/service/PackageStrategy.class
 com/mobiquityinc/dto/RawPackage.class
 com/mobiquityinc/dto/PackageInputRequest.class
+com/mobiquityinc/exception/NoPackageEligibleForSelectionException.class
 com/mobiquityinc/validate/PackageValidator.class
 com/mobiquityinc/model/Package.class
 com/mobiquityinc/model/Item.class

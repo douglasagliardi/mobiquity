@@ -44,10 +44,8 @@ public class EfficientPackageStrategy implements PackageStrategy {
 
     private float getTotalCostFor(Package bundle) {
         float result = 0;
-        //BigDecimal bd = new BigDecimal(0);
         for (Item it : bundle.getThings()) {
             result += it.getPrice();
-            //bd.add(it.getPrice());
         }
         return result;
     }

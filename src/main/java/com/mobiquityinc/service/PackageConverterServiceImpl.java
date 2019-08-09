@@ -6,6 +6,9 @@ import com.mobiquityinc.exception.APIException;
 import com.mobiquityinc.helper.DataTypeConverter;
 import com.mobiquityinc.model.Item;
 import com.mobiquityinc.model.Package;
+import com.mobiquityinc.validate.PackageItemsWeightAndCostValidator;
+import com.mobiquityinc.validate.PackageValidator;
+import com.mobiquityinc.validate.PackageWeightValidator;
 
 import java.util.Arrays;
 import java.util.List;
@@ -15,22 +18,28 @@ import static java.util.stream.Collectors.toList;
 public class PackageConverterServiceImpl implements PackageConverterService {
 
     private DataTypeConverter dataConverter;
+    private PackageValidator validator;
 
     public PackageConverterServiceImpl(DataTypeConverter converter) {
         this.dataConverter = converter;
+        validator = new PackageWeightValidator();
+        validator.linkToNext(new PackageItemsWeightAndCostValidator());
     }
 
     @Override
     public List<PackageInputRequest> convert(List<RawPackage> rawPackages) {
-        return rawPackages.stream().map(this::convert).collect(toList());
+        return rawPackages.stream()
+                .map(this::convert)
+                .filter(it -> validator.isValid(it))
+                .collect(toList());
     }
 
     @Override
     public PackageInputRequest convert(RawPackage rawPackage) {
         PackageInputRequest request = new PackageInputRequest();
-        Package pkg = new Package(dataConverter.convertToInteger(rawPackage.getMaxWeight()));
+        Package pkg = new Package(dataConverter.convertToFloat(rawPackage.getMaxWeight()));
         for (String item : rawPackage.getItems()) {
-            pkg.addItemTo(produceItem(item));
+            request.getInput().add(produceItem(item));
         }
         request.setBundle(pkg);
         return request;
