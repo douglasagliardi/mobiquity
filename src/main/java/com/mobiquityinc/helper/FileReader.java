@@ -1,25 +1,23 @@
 package com.mobiquityinc.helper;
 
+import java.io.File;
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
+
+import static org.apache.commons.io.FileUtils.readLines;
 
 public class FileReader {
 
-    public void read(String path) throws IOException {
-        //InputStream inputStream = null;
-//        try {
-//            File file = new File(ClassLoader.getResource("fileTest.txt").getFile());
-//            inputStream = new FileInputStream(file);
-//
-//            //...
-//        }
-//        finally {
-//            if (inputStream != null) {
-//                try {
-//                    inputStream.close();
-//                } catch (IOException e) {
-//                    e.printStackTrace();
-//                }
-//            }
-//        }
+    public List<String> readFile(String path) {
+        List<String> result = new ArrayList<>();
+        try {
+            File f = new File(path);
+            result = readLines(f, "UTF-8");
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return result;
     }
 }

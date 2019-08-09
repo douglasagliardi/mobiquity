@@ -8,7 +8,7 @@ import java.util.List;
 
 @Getter
 @AllArgsConstructor
-public class Package {
+public class Package extends BasePackage {
     private float maxWeightAllowed;
     private List<Item> things;
 
@@ -17,6 +17,7 @@ public class Package {
         things = new ArrayList<>();
     }
 
+    @Override
     public void addItemTo(Item element) {
         things.add(element);
     }
