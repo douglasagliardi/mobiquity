@@ -1,5 +1,5 @@
 /Users/dagliardi/Development/Isobar/EHI/mobiquity/src/test/java/com/mobiquityinc/service/validate/PackageWeightValidatorTest.java
-/Users/dagliardi/Development/Isobar/EHI/mobiquity/src/test/java/com/mobiquityinc/service/PackerTest.java
+/Users/dagliardi/Development/Isobar/EHI/mobiquity/src/test/java/com/mobiquityinc/service/packer/PackerTest.java
 /Users/dagliardi/Development/Isobar/EHI/mobiquity/src/test/java/com/mobiquityinc/service/validate/PackageItemsValidatorTest.java
 /Users/dagliardi/Development/Isobar/EHI/mobiquity/src/test/java/com/mobiquityinc/service/service/EfficientPackageStrategyTest.java
 /Users/dagliardi/Development/Isobar/EHI/mobiquity/src/test/java/com/mobiquityinc/service/service/PackageConverterServiceImplTest.java

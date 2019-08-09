@@ -1,4 +1,4 @@
-package com.mobiquityinc.service;
+package com.mobiquityinc.service.packer;
 
 import com.mobiquityinc.packer.Packer;
 import org.junit.jupiter.api.Test;
