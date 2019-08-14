@@ -4,6 +4,7 @@
 
 * Decorator - it's used for include extra functionality in runtime when adding an item into the list of items in a package
 * Strategy - responsible for define the strategy in how to organize and which items should be placed in the Package 
+* Chain of Responsibility - it's being used to implement/coordinate the validation for Packages and its respective items when inserting/creating those to produce the result of the algorithm
 
 ## Getting Started
 
