@@ -7,7 +7,7 @@ public class PackageDecorator extends BasePackage {
     @Getter
     protected BasePackage decoratedPackage;
 
-    public PackageDecorator(BasePackage basePackage) {
+    PackageDecorator(BasePackage basePackage) {
         decoratedPackage = basePackage;
     }
 

@@ -1,3 +1,4 @@
+target/*
 # Intellij
 /out/
 /.idea/

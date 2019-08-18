@@ -1,9 +1,8 @@
-package com.mobiquityinc.service.service;
+package com.mobiquityinc.service;
 
 import com.mobiquityinc.dto.PackageInputRequest;
 import com.mobiquityinc.dto.RawPackage;
 import com.mobiquityinc.helper.DataTypeConverter;
-import com.mobiquityinc.service.PackageConverterServiceImpl;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mockito;

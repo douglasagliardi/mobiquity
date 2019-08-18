@@ -1,9 +1,8 @@
-package com.mobiquityinc.service.service;
+package com.mobiquityinc.service;
 
 
 import com.mobiquityinc.dto.RawPackage;
 import com.mobiquityinc.exception.APIException;
-import com.mobiquityinc.service.RawPackageReaderConverter;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 

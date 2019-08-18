@@ -7,8 +7,8 @@ import lombok.ToString;
 import java.util.ArrayList;
 
 @Getter
-@AllArgsConstructor
 @ToString
+@AllArgsConstructor
 public class Package extends BasePackage {
 
     public Package(float maxWeight) {

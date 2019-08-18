@@ -1,4 +1,4 @@
-package com.mobiquityinc.service.service;
+package com.mobiquityinc.service;
 
 import com.mobiquityinc.dto.PackageInputRequest;
 import com.mobiquityinc.model.BasePackage;
@@ -6,8 +6,6 @@ import com.mobiquityinc.model.Item;
 import com.mobiquityinc.model.Package;
 import com.mobiquityinc.model.PackageDecorator;
 import com.mobiquityinc.model.PackagePrintDecorator;
-import com.mobiquityinc.service.EfficientPackageStrategy;
-import com.mobiquityinc.service.PackageStrategy;
 import org.junit.jupiter.api.Test;
 
 import java.math.BigDecimal;

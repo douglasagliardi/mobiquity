@@ -1,10 +1,9 @@
-package com.mobiquityinc.service.service;
+package com.mobiquityinc.service;
 
 import com.mobiquityinc.exception.NoPackageEligibleForSelectionException;
 import com.mobiquityinc.model.BasePackage;
 import com.mobiquityinc.model.Item;
 import com.mobiquityinc.model.Package;
-import com.mobiquityinc.service.PackageSelectorService;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 

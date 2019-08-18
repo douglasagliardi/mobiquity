@@ -1,4 +1,4 @@
-package com.mobiquityinc.service.validate;
+package com.mobiquityinc.validate;
 
 import com.mobiquityinc.dto.PackageInputRequest;
 import com.mobiquityinc.exception.PackageOverWeightException;
@@ -6,9 +6,6 @@ import com.mobiquityinc.model.Item;
 import com.mobiquityinc.model.Package;
 import com.mobiquityinc.model.PackageDecorator;
 import com.mobiquityinc.model.PackagePrintDecorator;
-import com.mobiquityinc.validate.PackageItemsWeightAndCostValidator;
-import com.mobiquityinc.validate.PackageValidator;
-import com.mobiquityinc.validate.PackageWeightValidator;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;

@@ -1,12 +1,10 @@
-package com.mobiquityinc.service.validate;
+package com.mobiquityinc.validate;
 
 import com.mobiquityinc.dto.PackageInputRequest;
 import com.mobiquityinc.model.Item;
 import com.mobiquityinc.model.Package;
 import com.mobiquityinc.model.PackageDecorator;
 import com.mobiquityinc.model.PackagePrintDecorator;
-import com.mobiquityinc.validate.PackageItemsWeightAndCostValidator;
-import com.mobiquityinc.validate.PackageValidator;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -73,5 +71,33 @@ public class PackageItemsWeightAndCostValidatorTest {
         request.setBundle(p1);
 
         assertThat(packageWeightValidator.isValid(request), equalTo(false));
+    }
+
+    @Test
+    public void isAllowedCustomPackageMaxWeightAndCost() {
+        PackageValidator customValidator = new PackageItemsWeightAndCostValidator(110, 105);
+        PackageDecorator p1 = new PackagePrintDecorator(new Package(101));
+
+        p1.addItemTo(new Item(1, 20.00F, 20));
+        p1.addItemTo(new Item(2, 101.00F, 15));
+        p1.addItemTo(new Item(3, 100.30F, 10));
+        p1.addItemTo(new Item(4, 20.00F, 30));
+        request.setBundle(p1);
+
+        assertThat(customValidator.isValid(request), equalTo(true));
+    }
+
+    @Test
+    public void isCustomPackageMaxWeightAndCostNotAllowingPackageGreaterThanIt() {
+        PackageValidator customValidator = new PackageItemsWeightAndCostValidator(110, 105);
+        PackageDecorator p1 = new PackagePrintDecorator(new Package(110));
+
+        p1.addItemTo(new Item(1, 20.00F, 20));
+        p1.addItemTo(new Item(2, 111.00F, 15)); // invalid
+        p1.addItemTo(new Item(3, 100.30F, 10));
+        p1.addItemTo(new Item(4, 20.00F, 30));
+        request.setBundle(p1);
+
+        assertThat(customValidator.isValid(request), equalTo(false));
     }
 }

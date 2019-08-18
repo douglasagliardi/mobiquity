@@ -15,7 +15,7 @@ public class FileReader {
     public List<String> readFile(String path) {
         List<String> result = new ArrayList<>();
         if (isBlank(path)) {
-           throw new APIException("Invalid path : " + path);
+            throw new APIException("Invalid path : " + path);
         }
         try {
             File f = new File(path);

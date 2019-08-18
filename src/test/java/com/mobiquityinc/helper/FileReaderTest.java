@@ -1,7 +1,6 @@
-package com.mobiquityinc.service.helper;
+package com.mobiquityinc.helper;
 
 import com.mobiquityinc.exception.APIException;
-import com.mobiquityinc.helper.FileReader;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
