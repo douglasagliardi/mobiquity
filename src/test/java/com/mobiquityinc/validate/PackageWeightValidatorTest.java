@@ -19,7 +19,7 @@ public class PackageWeightValidatorTest {
         PackageValidator packageWeightValidator = new PackageWeightValidator();
         PackageInputRequest request = new PackageInputRequest();
         PackageDecorator p1 = new PackagePrintDecorator(new Package(101));
-        p1.addItemTo(new Item(1, 20.00F, 30));
+        p1.addItemTo(new Item(1, 20.0, 30));
         request.setBundle(p1);
 
         Assertions.assertThrows(PackageOverWeightException.class, () ->
@@ -31,7 +31,7 @@ public class PackageWeightValidatorTest {
         PackageValidator packageWeightValidator = new PackageWeightValidator();
         PackageInputRequest request = new PackageInputRequest();
         PackageDecorator p1 = new PackagePrintDecorator(new Package(80));
-        p1.addItemTo(new Item(1, 20.00F, 30));
+        p1.addItemTo(new Item(1, 20.0, 30));
         request.setBundle(p1);
 
         assertThat(packageWeightValidator.isValid(request), equalTo(true));

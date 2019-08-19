@@ -30,20 +30,20 @@ public class EfficientPackageStrategy implements PackageStrategy {
         currentStatus.setCurrentCost(getTotalCostFor(aPackage));
     }
 
-    private boolean hasSpaceFor(Item item, float currentWeight, float maxWeight) {
+    private boolean hasSpaceFor(Item item, double currentWeight, double maxWeight) {
         return (item.getWeight() + currentWeight) <= maxWeight;
     }
 
-    private float getTotalPackageWeightFor(BasePackage bundle) {
-        float result = 0;
+    private double getTotalPackageWeightFor(BasePackage bundle) {
+        double result = 0;
         for (Item it : bundle.getThings()) {
             result += it.getWeight();
         }
         return result;
     }
 
-    private float getTotalCostFor(BasePackage bundle) {
-        float result = 0;
+    private double getTotalCostFor(BasePackage bundle) {
+        double result = 0;
         for (Item it : bundle.getThings()) {
             result += it.getPrice();
         }
@@ -55,15 +55,15 @@ public class EfficientPackageStrategy implements PackageStrategy {
         items.add(element);
     }
 
-    private boolean hasPriceGreaterThanAllItemsInTheBucket(Item element, float currentCost) {
+    private boolean hasPriceGreaterThanAllItemsInTheBucket(Item element, double currentCost) {
         return hasValueEqualsOrGreaterThan(element.getPrice(), currentCost);
     }
 
-    private boolean hasLessWeightThanAllItemsInTheBucket(Item element, float currentWeight) {
+    private boolean hasLessWeightThanAllItemsInTheBucket(Item element, double currentWeight) {
         return hasValueEqualsOrGreaterThan(element.getWeight(), currentWeight);
     }
 
-    private boolean hasValueEqualsOrGreaterThan(float itemValue, float comparingTo) {
+    private boolean hasValueEqualsOrGreaterThan(double itemValue, double comparingTo) {
         return itemValue >= comparingTo;
     }
 }

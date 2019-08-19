@@ -9,6 +9,6 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 public class Item {
     private int index;
-    private float weight;
+    private double weight;
     private int price;
 }

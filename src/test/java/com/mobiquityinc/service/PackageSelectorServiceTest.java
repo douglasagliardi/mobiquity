@@ -23,11 +23,11 @@ public class PackageSelectorServiceTest {
     public void isSelectorPickingUpThePackageWithTheHigherPrice() {
         PackageSelectorService selectorService = new PackageSelectorService();
         Package p1 = new Package(57);
-        p1.addItemTo(new Item(1, 20.00F, 30));
+        p1.addItemTo(new Item(1, 20.0, 30));
         Package p2 = new Package(80);
-        p2.addItemTo(new Item(1, 25.00F, 50));
+        p2.addItemTo(new Item(1, 25.0, 50));
         Package p3 = new Package(56);
-        p3.addItemTo(new Item(1, 20.00F, 31));
+        p3.addItemTo(new Item(1, 20.0, 31));
 
         BasePackage result = selectorService.select(Arrays.asList(p1, p2, p3));
         assertThat(result, is(notNullValue()));
@@ -38,9 +38,9 @@ public class PackageSelectorServiceTest {
     public void isSelectorPickingUpTheLighterPackageEvenIfBothHaveSameCost() {
         PackageSelectorService selectorService = new PackageSelectorService();
         Package p1 = new Package(57);
-        p1.addItemTo(new Item(1, 20.00F, 30));
+        p1.addItemTo(new Item(1, 20.0, 30));
         Package p3 = new Package(56);
-        p3.addItemTo(new Item(1, 20.01F, 30));
+        p3.addItemTo(new Item(1, 20.01, 30));
 
         BasePackage result = selectorService.select(Arrays.asList(p1, p3));
         assertThat(result, is(notNullValue()));
@@ -51,12 +51,12 @@ public class PackageSelectorServiceTest {
     public void isSelectorPickingUpTheRightPackageWithTheSamePriceButLessHeavy() {
         PackageSelectorService selectorService = new PackageSelectorService();
         Package p1 = new Package(57);
-        p1.addItemTo(new Item(1, 20.00F, 30));
+        p1.addItemTo(new Item(1, 20.0, 30));
         Package p2 = new Package(80);
-        p2.addItemTo(new Item(1, 25.00F, 50));
+        p2.addItemTo(new Item(1, 25.0, 50));
         Package p3 = new Package(57);
-        p3.addItemTo(new Item(1, 11.00F, 15));
-        p3.addItemTo(new Item(2, 10.00F, 15));
+        p3.addItemTo(new Item(1, 11.0, 15));
+        p3.addItemTo(new Item(2, 10.0, 15));
 
         BasePackage result = selectorService.select(Arrays.asList(p1, p2, p3));
         assertThat(result, is(notNullValue()));

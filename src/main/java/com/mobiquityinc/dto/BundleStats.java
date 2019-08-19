@@ -8,6 +8,6 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 public class BundleStats {
-    private float currentWeight;
-    private float currentCost;
+    private double currentWeight;
+    private double currentCost;
 }

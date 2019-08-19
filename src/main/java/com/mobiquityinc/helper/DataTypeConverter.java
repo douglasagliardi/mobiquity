@@ -6,7 +6,7 @@ public class DataTypeConverter {
         return Integer.parseInt(value);
     }
 
-    public Float convertToFloat(String value) {
-        return Float.parseFloat(value);
+    public Double convertToDouble(String value) {
+        return Double.parseDouble(value);
     }
 }

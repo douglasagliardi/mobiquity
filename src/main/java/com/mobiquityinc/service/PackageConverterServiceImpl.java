@@ -39,7 +39,7 @@ public class PackageConverterServiceImpl implements PackageConverterService {
     @Override
     public PackageInputRequest convert(RawPackage rawPackage) {
         PackageInputRequest request = new PackageInputRequest();
-        PackageDecorator pkg = new PackagePrintDecorator(new Package(dataConverter.convertToFloat(rawPackage.getMaxWeight())));
+        PackageDecorator pkg = new PackagePrintDecorator(new Package(dataConverter.convertToDouble(rawPackage.getMaxWeight())));
         for (String item : rawPackage.getItems()) {
             request.getInput().add(produceItem(item));
         }
@@ -51,11 +51,11 @@ public class PackageConverterServiceImpl implements PackageConverterService {
     private Item produceItem(String entry) {
         List<String> fields = Arrays.asList(entry.split(","));
         Integer index;
-        Float weight;
+        Double weight;
         Integer price;
         try {
             index = dataConverter.convertToInteger(fields.get(0));
-            weight = dataConverter.convertToFloat(fields.get(1));
+            weight = dataConverter.convertToDouble(fields.get(1));
             price = dataConverter.convertToInteger(fields.get(2).replace("€", ""));
         } catch (NumberFormatException exception) {
             throw new APIException("Some value is invalid");

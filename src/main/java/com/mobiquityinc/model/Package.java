@@ -11,7 +11,7 @@ import java.util.ArrayList;
 @AllArgsConstructor
 public class Package extends BasePackage {
 
-    public Package(float maxWeight) {
+    public Package(double maxWeight) {
         setMaxWeightAllowed(maxWeight);
         setThings(new ArrayList<>());
     }
